@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Guitar_ArenaDataSet" targetNamespace="http://tempuri.org/Guitar_ArenaDataSet.xsd" xmlns:mstns="http://tempuri.org/Guitar_ArenaDataSet.xsd" xmlns="http://tempuri.org/Guitar_ArenaDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Guitar_ArenaConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Guitar_ArenaConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.GuitarHero.Properties.Settings.GlobalReference.Default.Guitar_ArenaConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="jogadorTableAdapter" GeneratorDataComponentClassName="jogadorTableAdapter" Name="jogador" UserDataComponentName="jogadorTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Guitar_ArenaConnectionString (Settings)" DbObjectName="Guitar_Arena.dbo.jogador" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT nome_jogador FROM dbo.jogador</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="nome_jogador" DataSetColumn="nome_jogador" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Guitar_ArenaDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="Guitar_ArenaDataSet" msprop:Generator_DataSetName="Guitar_ArenaDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="jogador" msprop:Generator_RowEvHandlerName="jogadorRowChangeEventHandler" msprop:Generator_RowDeletedName="jogadorRowDeleted" msprop:Generator_RowDeletingName="jogadorRowDeleting" msprop:Generator_RowEvArgName="jogadorRowChangeEvent" msprop:Generator_TablePropName="jogador" msprop:Generator_RowChangedName="jogadorRowChanged" msprop:Generator_RowChangingName="jogadorRowChanging" msprop:Generator_TableClassName="jogadorDataTable" msprop:Generator_RowClassName="jogadorRow" msprop:Generator_TableVarName="tablejogador" msprop:Generator_UserTableName="jogador">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nome_jogador" msprop:Generator_ColumnPropNameInRow="nome_jogador" msprop:Generator_ColumnPropNameInTable="nome_jogadorColumn" msprop:Generator_ColumnVarNameInTable="columnnome_jogador" msprop:Generator_UserColumnName="nome_jogador">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
