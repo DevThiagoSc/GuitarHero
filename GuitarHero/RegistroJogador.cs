@@ -20,7 +20,7 @@ namespace GuitarHero
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
             Jogador jg = new Jogador();
-            Form1 frmPrincipal = new Form1();
+            FrmPrincipal frmPrincipal = new FrmPrincipal();
 
             jg.addJogador(tbxNome.Text);
             frmPrincipal.Refresh();

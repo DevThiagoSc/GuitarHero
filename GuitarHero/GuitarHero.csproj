@@ -50,8 +50,14 @@
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="Form1.designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrincipal.Designer.cs">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmJogo.cs">
       <SubType>Form</SubType>
@@ -59,6 +65,7 @@
     <Compile Include="FrmJogo.Designer.cs">
       <DependentUpon>FrmJogo.cs</DependentUpon>
     </Compile>
+    <Compile Include="GuitarMainBase.cs" />
     <Compile Include="Guitar_ArenaDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -88,6 +95,9 @@
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmJogo.resx">
       <DependentUpon>FrmJogo.cs</DependentUpon>
@@ -178,6 +188,17 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AdoNetDiag.dll" />
+    <Content Include="Resources\blue buttons.png" />
+    <Content Include="Resources\checkBlue.png" />
+    <Content Include="Resources\checkGreen.png" />
+    <Content Include="Resources\checkOrange.png" />
+    <Content Include="Resources\checkRed.png" />
+    <Content Include="Resources\checkYellow.png" />
+    <Content Include="Resources\fireGame.png" />
+    <Content Include="Resources\greenbuttons.png" />
+    <Content Include="Resources\orange buttons.png" />
+    <Content Include="Resources\redbuttons.png" />
+    <Content Include="Resources\yellow buttons.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

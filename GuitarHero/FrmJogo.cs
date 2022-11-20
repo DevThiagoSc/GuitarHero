@@ -114,10 +114,5 @@ namespace GuitarHero
                 this.btnLaranja.BackColor = System.Drawing.Color.FromArgb(255, 128, 0);
             }
         }
-
-        private void btnVerde_Click(object sender, EventArgs e)
-        {
-            
-        }
     }
 }

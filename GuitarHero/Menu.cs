@@ -38,8 +38,8 @@ namespace GuitarHero
 
         private void btnJogar_Click(object sender, EventArgs e)
         {
-            FrmJogo jg = new FrmJogo();
-            jg.Show();
+            //Form1 jg = new Form1();
+            //jg.Show();
         }
 
         private void frmMenu_Load(object sender, EventArgs e)

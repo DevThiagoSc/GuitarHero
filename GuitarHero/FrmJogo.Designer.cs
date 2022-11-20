@@ -160,7 +160,6 @@
             this.btnVerde.Size = new System.Drawing.Size(53, 37);
             this.btnVerde.TabIndex = 0;
             this.btnVerde.UseVisualStyleBackColor = false;
-            this.btnVerde.Click += new System.EventHandler(this.btnVerde_Click);
             this.btnVerde.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnVerde_KeyDown);
             this.btnVerde.KeyUp += new System.Windows.Forms.KeyEventHandler(this.btnVerde_KeyUp_1);
             // 
