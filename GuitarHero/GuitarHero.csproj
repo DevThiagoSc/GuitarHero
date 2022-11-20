@@ -12,6 +12,21 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -47,11 +62,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BD.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="FrmJogo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FrmJogo.designer.cs">
+      <DependentUpon>FrmJogo.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmPrincipal.cs">
       <SubType>Form</SubType>
@@ -59,13 +74,14 @@
     <Compile Include="FrmPrincipal.Designer.cs">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmJogo.cs">
+    <Compile Include="FrmJ.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmJogo.Designer.cs">
-      <DependentUpon>FrmJogo.cs</DependentUpon>
+    <Compile Include="FrmJ.Designer.cs">
+      <DependentUpon>FrmJ.cs</DependentUpon>
     </Compile>
     <Compile Include="GuitarMainBase.cs" />
+    <Compile Include="GuitarMainBaseBase.cs" />
     <Compile Include="Guitar_ArenaDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -93,14 +109,14 @@
     <Compile Include="RegistroJogador.Designer.cs">
       <DependentUpon>RegistroJogador.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="FrmJogo.resx">
+      <DependentUpon>FrmJogo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmJogo.resx">
-      <DependentUpon>FrmJogo.cs</DependentUpon>
+    <EmbeddedResource Include="FrmJ.resx">
+      <DependentUpon>FrmJ.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
@@ -188,17 +204,30 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AdoNetDiag.dll" />
-    <Content Include="Resources\blue buttons.png" />
-    <Content Include="Resources\checkBlue.png" />
-    <Content Include="Resources\checkGreen.png" />
-    <Content Include="Resources\checkOrange.png" />
-    <Content Include="Resources\checkRed.png" />
-    <Content Include="Resources\checkYellow.png" />
-    <Content Include="Resources\fireGame.png" />
-    <Content Include="Resources\greenbuttons.png" />
-    <Content Include="Resources\orange buttons.png" />
-    <Content Include="Resources\redbuttons.png" />
-    <Content Include="Resources\yellow buttons.png" />
+    <None Include="Resources\fundo.jpg" />
+    <None Include="Resources\checkYellow.png" />
+    <None Include="Resources\blue buttons.png" />
+    <None Include="Resources\checkBlue.png" />
+    <None Include="Resources\checkGreen.png" />
+    <None Include="Resources\checkOrange.png" />
+    <None Include="Resources\checkRed.png" />
+    <None Include="Resources\yellow buttons.png" />
+    <None Include="Resources\fireGame.png" />
+    <None Include="Resources\greenbuttons.png" />
+    <None Include="Resources\orange buttons.png" />
+    <None Include="Resources\redbuttons.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 e x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

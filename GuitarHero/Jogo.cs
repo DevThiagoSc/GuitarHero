@@ -28,5 +28,15 @@ namespace GuitarHero
         public int Pontuacao { get => pontuacao; set => pontuacao = value; }
         public int IdJogador { get => idJogador; set => idJogador = value; }
         public int IdMusica { get => idMusica; set => idMusica = value; }
+
+        public void addJogo(int idJogador)
+        {
+            sqlcmd = "Insert into jogo (id_jogador, id_musica)" +
+                "values(";
+            sqlcmd += "'" + idJogador + "',";
+            sqlcmd += "1);";
+
+            bd.ExecutaComando(sqlcmd);
+        }
     }
 }

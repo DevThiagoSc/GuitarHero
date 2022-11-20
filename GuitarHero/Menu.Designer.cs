@@ -32,6 +32,8 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvMusicas = new System.Windows.Forms.DataGridView();
+            this.MusicaColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bandaColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnJogar = new System.Windows.Forms.Button();
             this.cbxJogador = new System.Windows.Forms.ComboBox();
             this.jogadorBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
@@ -41,8 +43,6 @@
             this.lblJogador = new System.Windows.Forms.Label();
             this.jogadorTableAdapter = new GuitarHero.Guitar_ArenaDataSetTableAdapters.jogadorTableAdapter();
             this.jogadorTableAdapter1 = new GuitarHero.Guitar_ArenaDataSet1TableAdapters.jogadorTableAdapter();
-            this.MusicaColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bandaColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMusicas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.jogadorBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guitar_ArenaDataSet1)).BeginInit();
@@ -76,6 +76,19 @@
             this.dgvMusicas.RowHeadersVisible = false;
             this.dgvMusicas.Size = new System.Drawing.Size(243, 329);
             this.dgvMusicas.TabIndex = 0;
+            // 
+            // MusicaColumn
+            // 
+            this.MusicaColumn.HeaderText = "Música";
+            this.MusicaColumn.Name = "MusicaColumn";
+            this.MusicaColumn.ReadOnly = true;
+            this.MusicaColumn.Width = 142;
+            // 
+            // bandaColumn
+            // 
+            this.bandaColumn.HeaderText = "banda";
+            this.bandaColumn.Name = "bandaColumn";
+            this.bandaColumn.ReadOnly = true;
             // 
             // btnJogar
             // 
@@ -139,19 +152,6 @@
             // jogadorTableAdapter1
             // 
             this.jogadorTableAdapter1.ClearBeforeFill = true;
-            // 
-            // MusicaColumn
-            // 
-            this.MusicaColumn.HeaderText = "Música";
-            this.MusicaColumn.Name = "MusicaColumn";
-            this.MusicaColumn.ReadOnly = true;
-            this.MusicaColumn.Width = 142;
-            // 
-            // bandaColumn
-            // 
-            this.bandaColumn.HeaderText = "banda";
-            this.bandaColumn.Name = "bandaColumn";
-            this.bandaColumn.ReadOnly = true;
             // 
             // frmMenu
             // 

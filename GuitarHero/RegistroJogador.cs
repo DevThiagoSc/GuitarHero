@@ -23,7 +23,6 @@ namespace GuitarHero
             FrmPrincipal frmPrincipal = new FrmPrincipal();
 
             jg.addJogador(tbxNome.Text);
-            frmPrincipal.Refresh();
             this.Close();
         }
 

@@ -14,6 +14,7 @@ namespace GuitarHero
     public partial class frmMenu : Form
     {
         BD bd = new BD();
+        int idJogador, idMusica;
 
         public void listarMusica()
         {
@@ -38,8 +39,13 @@ namespace GuitarHero
 
         private void btnJogar_Click(object sender, EventArgs e)
         {
-            //Form1 jg = new Form1();
-            //jg.Show();
+            FrmJogo jg = new FrmJogo();
+            Jogo jogo = new Jogo();
+
+            idJogador = (int)cbxJogador.SelectedValue;
+            jogo.addJogo(idJogador);
+
+            jg.Show();
         }
 
         private void frmMenu_Load(object sender, EventArgs e)
